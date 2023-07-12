@@ -1,0 +1,25 @@
+﻿<br />
+<div class="container row p-0 m-0">
+    <div class="col-6">
+        <h2 class="text-info">Lista de Libros</h2>
+    </div>
+    <div class="col-3 offset-3">
+        <a asp-action="Upsert" asp-controller="Libros" class="btn btn-info form-control text-white">Agregar nuevo libro</a>
+    </div>
+    <div class="col-12 border p-3">
+        <table id="CargarDT" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Autor</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/ListaLibros.js"></script>
+}
